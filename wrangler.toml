@@ -1,0 +1,23 @@
+name = "thinky-fun-kids"
+type = "javascript"
+account_id = ""
+workers_dev = true
+route = ""
+zone_id = ""
+
+[build]
+command = ""
+cwd = "./"
+watch_paths = []
+
+[build.upload]
+format = "service-worker"
+
+[env.production]
+
+[triggers.crons]
+
+[site]
+bucket = "."
+include = ["*.html", "*.css", "*.js", "images/**"]
+exclude = ["node_modules", ".git", ".gitignore"]
