@@ -1,10 +1,8 @@
 {
-  "name": "thinky-fun-kids",
+  "name": "thinkyfunkids",
   "compatibility_date": "2024-01-01",
   "main": "src/index.js",
   "assets": {
-    "directory": ".",
-    "binding": "ASSETS",
-    "include": ["*.html", "*.css", "*.js", "images/**"]
+    "directory": "."
   }
 }
