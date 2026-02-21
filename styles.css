@@ -302,7 +302,10 @@ p {
     align-items: center;
     gap: 3rem;
     padding: 100px var(--spacing-lg) 80px;
-    background: linear-gradient(135deg, rgba(255, 107, 157, 0.15) 0%, rgba(255, 217, 61, 0.1) 50%, rgba(78, 205, 196, 0.12) 100%);
+    background: 
+        linear-gradient(135deg, rgba(255, 107, 157, 0.15) 0%, rgba(255, 217, 61, 0.1) 50%, rgba(78, 205, 196, 0.12) 100%),
+        url('images/background.png') center / cover no-repeat;
+    background-attachment: fixed;
     min-height: 90vh;
     margin-top: 60px;
     position: relative;
