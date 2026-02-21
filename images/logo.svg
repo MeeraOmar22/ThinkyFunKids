@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="95" fill="#FF6B9D" opacity="0.1"/>
+  
+  <!-- Brain Shape -->
+  <g transform="translate(100, 80)">
+    <!-- Left hemisphere -->
+    <path d="M -20 0 Q -25 -15 -20 -25 Q -10 -30 0 -25 L 0 0 Z" fill="#FF6B9D"/>
+    <circle cx="-15" cy="-20" r="4" fill="#FFD93D"/>
+    <circle cx="-10" cy="-18" r="3" fill="#FFD93D"/>
+    
+    <!-- Right hemisphere -->
+    <path d="M 20 0 Q 25 -15 20 -25 Q 10 -30 0 -25 L 0 0 Z" fill="#4ECDC4"/>
+    <circle cx="15" cy="-20" r="4" fill="#FFD93D"/>
+    <circle cx="10" cy="-18" r="3" fill="#FFD93D"/>
+    
+    <!-- Brain stem -->
+    <rect x="-8" y="0" width="16" height="20" rx="8" fill="#2C3E50"/>
+  </g>
+  
+  <!-- Star accents -->
+  <g transform="translate(30, 30)">
+    <polygon points="0,-8 2.4,-2.4 8,-0.8 3.2,3.2 4.8,9.6 0,6.4 -4.8,9.6 -3.2,3.2 -8,-0.8 -2.4,-2.4" fill="#FFD93D"/>
+  </g>
+  
+  <g transform="translate(170, 40)">
+    <polygon points="0,-6 1.8,-1.8 6,-0.6 2.4,2.4 3.6,7.2 0,4.8 -3.6,7.2 -2.4,2.4 -6,-0.6 -1.8,-1.8" fill="#FF6B9D"/>
+  </g>
+  
+  <g transform="translate(160, 160)">
+    <polygon points="0,-6 1.8,-1.8 6,-0.6 2.4,2.4 3.6,7.2 0,4.8 -3.6,7.2 -2.4,2.4 -6,-0.6 -1.8,-1.8" fill="#4ECDC4"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="100" y="155" font-family="Fredoka, Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#2C3E50">THINKY FUN</text>
+  <text x="100" y="175" font-family="Fredoka, Arial" font-size="12" text-anchor="middle" fill="#4ECDC4">KIDS</text>
+</svg>

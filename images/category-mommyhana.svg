@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="mommyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6B9D;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#A78BFA;stop-opacity:0.1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="400" height="300" fill="url(#mommyGrad)"/>
+  
+  <!-- Mother and child silhouette -->
+  <g transform="translate(100, 80)">
+    <!-- Mother -->
+    <!-- Head -->
+    <circle cx="0" cy="0" r="18" fill="#FF6B9D"/>
+    <!-- Hair -->
+    <ellipse cx="0" cy="-18" rx="22" ry="12" fill="#D35400"/>
+    <!-- Body -->
+    <path d="M -12 18 L -15 60 L -8 60 L -8 50 L 8 50 L 8 60 L 15 60 L 12 18 Z" fill="#4ECDC4"/>
+    <!-- Arms -->
+    <line x1="-12" y1="25" x2="-35" y2="35" stroke="#FF6B9D" stroke-width="5" stroke-linecap="round"/>
+    <line x1="12" y1="25" x2="35" y2="35" stroke="#FF6B9D" stroke-width="5" stroke-linecap="round"/>
+    
+    <!-- Child on side -->
+    <g transform="translate(30, 15)">
+      <!-- Head -->
+      <circle cx="0" cy="0" r="12" fill="#FFD93D"/>
+      <!-- Body -->
+      <rect x="-7" y="12" width="14" height="25" fill="#A78BFA" rx="3"/>
+      <!-- Arms -->
+      <line x1="-7" y1="18" x2="-18" y2="15" stroke="#FFD93D" stroke-width="3" stroke-linecap="round"/>
+      <!-- Legs -->
+      <line x1="-4" y1="37" x2="-5" y2="50" stroke="#2C3E50" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="4" y1="37" x2="5" y2="50" stroke="#2C3E50" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+    
+    <!-- Love heart between them -->
+    <path d="M 5 35 L 8 32 C 10 30 13 30 15 32 C 17 34 17 37 15 39 L 5 48 L -5 39 C -7 37 -7 34 -5 32 C -3 30 0 30 2 32 Z" fill="#FF6B9D" opacity="0.8"/>
+  </g>
+  
+  <!-- Book (learning/development) -->
+  <g transform="translate(260, 100)">
+    <!-- Open book -->
+    <path d="M 0 0 L 0 70 L 40 72 L 40 2 Z" fill="#FFFFFF" stroke="#2C3E50" stroke-width="1.5" opacity="0.9"/>
+    <path d="M 40 2 L 40 72 L 80 70 L 80 0 Z" fill="#F7F9FC" stroke="#2C3E50" stroke-width="1.5" opacity="0.9"/>
+    <!-- Spine -->
+    <line x1="40" y1="0" x2="40" y2="72" stroke="#2C3E50" stroke-width="2"/>
+    <!-- Pages content - lines -->
+    <line x1="8" y1="12" x2="32" y2="12" stroke="#2C3E50" stroke-width="0.8" opacity="0.5"/>
+    <line x1="8" y1="20" x2="32" y2="20" stroke="#2C3E50" stroke-width="0.8" opacity="0.5"/>
+    <line x1="8" y1="28" x2="28" y2="28" stroke="#2C3E50" stroke-width="0.8" opacity="0.5"/>
+    <line x1="48" y1="12" x2="72" y2="12" stroke="#2C3E50" stroke-width="0.8" opacity="0.5"/>
+    <line x1="48" y1="20" x2="72" y2="20" stroke="#2C3E50" stroke-width="0.8" opacity="0.5"/>
+    <line x1="48" y1="28" x2="68" y2="28" stroke="#2C3E50" stroke-width="0.8" opacity="0.5"/>
+    <!-- Colorful elements -->
+    <circle cx="15" cy="42" r="6" fill="#FF6B9D" opacity="0.7"/>
+    <circle cx="60" cy="42" r="6" fill="#4ECDC4" opacity="0.7"/>
+  </g>
+  
+  <!-- Health/wellness symbols -->
+  <g transform="translate(80, 200)">
+    <!-- Milk glass -->
+    <path d="M 0 0 L -15 50 L 15 50 L 0 0" fill="#F5DEB3" stroke="#2C3E50" stroke-width="1.5"/>
+    <line x1="-15" y1="40" x2="15" y2="40" stroke="#2C3E50" stroke-width="1" opacity="0.5"/>
+    <!-- Milk level -->
+    <path d="M -14 42 L 14 42 L 11 48 L -11 48 Z" fill="#F5DEB3" opacity="0.6"/>
+    <!-- Milk drops -->
+    <circle cx="25" cy="30" r="3" fill="#F5DEB3" opacity="0.8"/>
+    <circle cx="30" cy="20" r="2.5" fill="#F5DEB3" opacity="0.7"/>
+  </g>
+  
+  <!-- Green leaf (natural/organic) -->
+  <g transform="translate(270, 200)">
+    <!-- Leaf -->
+    <ellipse cx="0" cy="0" rx="25" ry="40" fill="#27AE60" transform="rotate(-25 0 0)"/>
+    <!-- Vein -->
+    <path d="M 0 -35 Q 5 -20 8 0 Q 5 20 0 35" stroke="#1E8449" stroke-width="1.5" fill="none"/>
+    <!-- Side veins -->
+    <path d="M 0 -20 L -18 -15" stroke="#1E8449" stroke-width="1" opacity="0.5"/>
+    <path d="M 0 -10 L 16 -8" stroke="#1E8449" stroke-width="1" opacity="0.5"/>
+    <path d="M 0 10 L -15 15" stroke="#1E8449" stroke-width="1" opacity="0.5"/>
+    <path d="M 0 20 L 16 22" stroke="#1E8449" stroke-width="1" opacity="0.5"/>
+  </g>
+  
+  <!-- Vitamins/supplements -->
+  <g transform="translate(150, 210)">
+    <!-- Pill 1 -->
+    <ellipse cx="-15" cy="0" rx="6" ry="10" fill="#FF6B9D" opacity="0.8"/>
+    <!-- Pill 2 -->
+    <ellipse cx="0" cy="0" rx="6" ry="10" fill="#4ECDC4" opacity="0.8"/>
+    <!-- Pill 3 -->
+    <ellipse cx="15" cy="0" rx="6" ry="10" fill="#FFD93D" opacity="0.8"/>
+    <!-- Shine on pills -->
+    <ellipse cx="-15" cy="-3" rx="3" ry="4" fill="white" opacity="0.4"/>
+    <ellipse cx="0" cy="-3" rx="3" ry="4" fill="white" opacity="0.4"/>
+    <ellipse cx="15" cy="-3" rx="3" ry="4" fill="white" opacity="0.4"/>
+  </g>
+  
+  <!-- Smiling sun (happy/healthy) -->
+  <g transform="translate(330, 250)">
+    <!-- Sun circle -->
+    <circle cx="0" cy="0" r="20" fill="#FFD93D" opacity="0.8"/>
+    <!-- Rays -->
+    <line x1="0" y1="-35" x2="0" y2="-45" stroke="#FFD93D" stroke-width="3" stroke-linecap="round"/>
+    <line x1="25" y1="-25" x2="33" y2="-33" stroke="#FFD93D" stroke-width="3" stroke-linecap="round"/>
+    <line x1="35" y1="0" x2="45" y2="0" stroke="#FFD93D" stroke-width="3" stroke-linecap="round"/>
+    <!-- Face -->
+    <circle cx="-7" cy="-5" r="2.5" fill="#2C3E50"/>
+    <circle cx="7" cy="-5" r="2.5" fill="#2C3E50"/>
+    <path d="M -8 3 Q 0 8 8 3" stroke="#2C3E50" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Decorative sparkles -->
+  <circle cx="50" cy="100" r="2" fill="#FF6B9D" opacity="0.5"/>
+  <circle cx="340" cy="100" r="2" fill="#4ECDC4" opacity="0.5"/>
+  <circle cx="80" cy="280" r="1.5" fill="#FFD93D" opacity="0.5"/>
+</svg>

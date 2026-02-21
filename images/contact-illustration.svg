@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <!-- Background -->
+  <defs>
+    <linearGradient id="contactGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4ECDC4;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#FF6B9D;stop-opacity:0.1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="600" height="400" fill="url(#contactGrad)"/>
+  
+  <!-- Envelope/Message -->
+  <g transform="translate(100, 100)">
+    <!-- Envelope body -->
+    <rect x="0" y="20" width="140" height="100" fill="#FFFFFF" stroke="#2C3E50" stroke-width="2" rx="3"/>
+    <!-- Envelope flap -->
+    <polygon points="0,20 70,60 140,20" fill="#FF6B9D" opacity="0.8"/>
+    <polygon points="0,20 70,55 140,20" fill="none" stroke="#2C3E50" stroke-width="2"/>
+    <!-- Envelope lines -->
+    <line x1="0" y1="35" x2="140" y2="35" stroke="#2C3E50" stroke-width="1" opacity="0.3"/>
+    <line x1="0" y1="50" x2="140" y2="50" stroke="#2C3E50" stroke-width="1" opacity="0.3"/>
+    <line x1="0" y1="65" x2="140" y2="65" stroke="#2C3E50" stroke-width="1" opacity="0.3"/>
+    <!-- Heart stamp -->
+    <g transform="translate(120, 30)">
+      <path d="M 0 -4 C -5 -8 -11 -6 -11 0 C -11 6 0 13 0 13 C 0 13 11 6 11 0 C 11 -6 5 -8 0 -4 Z" fill="#FFD93D"/>
+    </g>
+  </g>
+  
+  <!-- Phone/Chat bubble -->
+  <g transform="translate(350, 100)">
+    <!-- Phone -->
+    <rect x="-30" y="0" width="60" height="100" fill="#2C3E50" stroke="#1A252F" stroke-width="1.5" rx="8"/>
+    <!-- Screen -->
+    <rect x="-25" y="5" width="50" height="80" fill="#F7F9FC" rx="4"/>
+    <!-- Chat bubbles -->
+    <g transform="translate(-15, 15)">
+      <!-- Received message -->
+      <rect x="0" y="0" width="28" height="15" fill="#4ECDC4" rx="4"/>
+      <polygon points="0,12 -2,12 0,15" fill="#4ECDC4"/>
+      <line x1="4" y1="6" x2="24" y2="6" stroke="#FFFFFF" stroke-width="1"/>
+      <!-- Sent message -->
+      <rect x="0" y="22" width="28" height="15" fill="#FF6B9D" rx="4"/>
+      <polygon points="28,34 30,34 28,37" fill="#FF6B9D"/>
+      <line x1="4" y1="28" x2="24" y2="28" stroke="#FFFFFF" stroke-width="1"/>
+    </g>
+    <!-- Phone button -->
+    <circle cx="0" cy="95" r="3" fill="#1A252F" opacity="0.5"/>
+  </g>
+  
+  <!-- Support/Help symbol -->
+  <g transform="translate(200, 280)">
+    <!-- Question mark circle -->
+    <circle cx="0" cy="0" r="35" fill="none" stroke="#4ECDC4" stroke-width="2.5"/>
+    <!-- Question mark -->
+    <text x="0" y="12" font-size="50" font-weight="bold" fill="#4ECDC4" text-anchor="middle">?</text>
+    <!-- Dot beneath -->
+    <circle cx="0" cy="25" r="3" fill="#4ECDC4"/>
+  </g>
+  
+  <!-- Handshake/Partnership -->
+  <g transform="translate(450, 280)">
+    <!-- Left hand -->
+    <path d="M -25 0 L -15 5 L -10 0 L -8 8 L -2 5 L 0 12 Z" fill="#FF6B9D" stroke="#2C3E50" stroke-width="1.5"/>
+    <!-- Right hand -->
+    <path d="M 25 0 L 15 5 L 10 0 L 8 8 L 2 5 L 0 12 Z" fill="#A78BFA" stroke="#2C3E50" stroke-width="1.5" transform="scale(-1 1) translate(0 0)"/>
+    <!-- Connection point -->
+    <circle cx="0" cy="8" r="8" fill="#FFD93D" opacity="0.7"/>
+  </g>
+  
+  <!-- Team/People collaboration -->
+  <g transform="translate(300, 150)">
+    <!-- Person 1 -->
+    <circle cx="-35" cy="20" r="15" fill="#FF6B9D"/>
+    <rect x="-42" y="38" width="14" height="30" fill="#4ECDC4" rx="3"/>
+    <!-- Person 2 (center, taller) -->
+    <circle cx="0" cy="10" r="18" fill="#4ECDC4"/>
+    <rect x="-8" y="32" width="16" height="36" fill="#A78BFA" rx="3"/>
+    <!-- Person 3 -->
+    <circle cx="35" cy="20" r="15" fill="#A78BFA"/>
+    <rect x="28" y="38" width="14" height="30" fill="#FF6B9D" rx="3"/>
+    <!-- Connection lines showing collaboration -->
+    <line x1="-35" y1="60" x2="0" y2="65" stroke="#FFD93D" stroke-width="1.5" opacity="0.6"/>
+    <line x1="0" y1="65" x2="35" y2="60" stroke="#FFD93D" stroke-width="1.5" opacity="0.6"/>
+  </g>
+  
+  <!-- WhatsApp/Chat icon -->
+  <g transform="translate(100, 320)">
+    <!-- Phone bubble -->
+    <path d="M 0 0 C -22 0 -40 18 -40 40 C -40 52 -35 63 -27 71 L -32 85 L -16 77 C -8 81 2 83 15 83 C 37 83 55 65 55 43 C 55 21 37 3 15 3 C 10 3 5 3 0 0" fill="#27AE60" opacity="0.85"/>
+    <!-- Chat bubble -->
+    <circle cx="-10" cy="25" r="3" fill="#FFFFFF" opacity="0.8"/>
+    <circle cx="0" cy="25" r="3" fill="#FFFFFF" opacity="0.8"/>
+    <circle cx="10" cy="25" r="3" fill="#FFFFFF" opacity="0.8"/>
+    <!-- WhatsApp icon style -->
+    <text x="0" y="50" font-size="20" fill="#FFFFFF" text-anchor="middle" opacity="0.8">✓✓</text>
+  </g>
+  
+  <!-- Email icon -->
+  <g transform="translate(500, 320)">
+    <!-- Envelope -->
+    <rect x="-25" y="0" width="50" height="35" fill="#FF6B9D" stroke="#2C3E50" stroke-width="1.5" rx="2"/>
+    <!-- Flap -->
+    <polygon points="-25,0 0,17 25,0" fill="none" stroke="#2C3E50" stroke-width="1.5"/>
+    <!-- Email lines -->
+    <line x1="-20" y1="10" x2="15" y2="22" stroke="#FFFFFF" stroke-width="1.5" opacity="0.7"/>
+    <line x1="20" y1="10" x2="-5" y2="22" stroke="#FFFFFF" stroke-width="1.5" opacity="0.7"/>
+  </g>
+  
+  <!-- Decorative elements -->
+  <!-- Floating stars -->
+  <g transform="translate(80, 150)">
+    <path d="M 0 -8 L 2 -2 L 9 -2 L 4 2 L 6 8 L 0 4 L -6 8 L -4 2 L -9 -2 L -2 -2 Z" fill="#FFD93D" opacity="0.6"/>
+  </g>
+  
+  <g transform="translate(520, 180)">
+    <path d="M 0 -6 L 1.5 -1.5 L 6 -1.5 L 3 1.5 L 4.5 6 L 0 3 L -4.5 6 L -3 1.5 L -6 -1.5 L -1.5 -1.5 Z" fill="#FF6B9D" opacity="0.5"/>
+  </g>
+  
+  <!-- Success checkmark -->
+  <g transform="translate(300, 80)">
+    <circle cx="0" cy="0" r="25" fill="none" stroke="#27AE60" stroke-width="2.5" opacity="0.6"/>
+    <path d="M -10 0 L -3 8 L 15 -10" stroke="#27AE60" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+  </g>
+</svg>
