@@ -30,25 +30,6 @@ if (navToggle) {
 }
 
 /* ============================================
-   ACTIVE NAV LINK ON SCROLL (for single page)
-   ============================================ */
-
-window.addEventListener('scroll', () => {
-    let scrollPosition = window.scrollY;
-
-    navLinks.forEach(link => {
-        const section = document.querySelector(link.getAttribute('href'));
-        if (section) {
-            if (scrollPosition >= section.offsetTop - 100 && 
-                scrollPosition < section.offsetTop + section.offsetHeight - 100) {
-                navLinks.forEach(l => l.classList.remove('active'));
-                link.classList.add('active');
-            }
-        }
-    });
-});
-
-/* ============================================
    FAQ ACCORDION
    ============================================ */
 
@@ -174,6 +155,47 @@ const filterSystem = {
         
         // Update accessibility
         this.updateAccessibility(button);
+        
+        // Scroll to products section with selected category
+        this.scrollToProducts(selectedCategory);
+    },
+    
+    /**
+     * Scroll to products section smoothly
+     * @param {string} selectedCategory - The selected category to scroll to
+     */
+    scrollToProducts(selectedCategory) {
+        // Wait for CSS animations to complete (0.6s animation + 0.4s max delay = 1s total)
+        // Using 600ms to allow animations to finish without excessive delay
+        setTimeout(() => {
+            let targetGrid = null;
+            
+            if (selectedCategory === 'all') {
+                // For 'all', scroll to the first visible products grid
+                const allGrids = document.querySelectorAll('.products-grid');
+                for (let grid of allGrids) {
+                    const section = grid.closest('[data-category]');
+                    if (section && !section.classList.contains('hidden')) {
+                        targetGrid = grid;
+                        break;
+                    }
+                }
+            } else {
+                // For specific categories, find the CATEGORY SECTION (not filter button) with matching data-category
+                const section = document.querySelector(`.category-section[data-category="${selectedCategory}"]`);
+                if (section) {
+                    targetGrid = section.querySelector('.products-grid');
+                }
+            }
+            
+            if (targetGrid) {
+                // Scroll to center the products in view
+                targetGrid.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'center'
+                });
+            }
+        }, 600);
     },
     
     /**
@@ -250,10 +272,14 @@ const filterSystem = {
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', () => {
         filterSystem.init();
+        // Scroll to top when page loads/refreshes
+        window.scrollTo(0, 0);
     });
 } else {
     // DOM already loaded
     filterSystem.init();
+    // Scroll to top when page loads/refreshes
+    window.scrollTo(0, 0);
 }
 
 /* ============================================
@@ -305,47 +331,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
    PAGE LOAD ANIMATION
    ============================================ */
 
-window.addEventListener('load', () => {
-    document.body.style.opacity = '1';
-});
-
 document.body.style.opacity = '0';
 document.body.style.transition = 'opacity 0.5s ease';
 window.addEventListener('load', () => {
     document.body.style.opacity = '1';
-});
-
-/* ============================================
-   UTILITY FUNCTIONS
-   ============================================ */
-
-/**
- * Log analytics event
- * @param {string} eventName - Name of the event
- * @param {object} eventData - Data associated with event
- */
-function logEvent(eventName, eventData = {}) {
-    console.log(`Event: ${eventName}`, eventData);
-    // You could send this to an analytics service
-}
-
-/**
- * Trigger purchase analytics
- */
-document.querySelectorAll('a[href*="toyyibpay.com"]').forEach(link => {
-    link.addEventListener('click', () => {
-        const productName = link.closest('.product-card')?.querySelector('h3')?.textContent || 'Unknown';
-        logEvent('product_clicked', { product: productName });
-    });
-});
-
-/**
- * Trigger WhatsApp click analytics
- */
-document.querySelectorAll('a[href*="wa.link"]').forEach(link => {
-    link.addEventListener('click', () => {
-        logEvent('whatsapp_clicked');
-    });
 });
 
 /* ============================================
@@ -385,36 +374,4 @@ skipLink.addEventListener('blur', () => {
 });
 document.body.prepend(skipLink);
 
-/* ============================================
-   PERFORMANCE OPTIMIZATION
-   ============================================ */
 
-// Lazy load images (if needed)
-if ('IntersectionObserver' in window) {
-    const images = document.querySelectorAll('img[loading="lazy"]');
-    images.forEach(img => {
-        observer.observe(img);
-    });
-}
-
-// Debounce function for scroll events
-function debounce(func, wait) {
-    let timeout;
-    return function executedFunction(...args) {
-        const later = () => {
-            clearTimeout(timeout);
-            func(...args);
-        };
-        clearTimeout(timeout);
-        timeout = setTimeout(later, wait);
-    };
-}
-
-// Optimize scroll listener
-const optimizedScroll = debounce(() => {
-    // Scroll logic here
-}, 100);
-
-window.addEventListener('scroll', optimizedScroll);
-
-console.log('Thinky Fun Kids - Website Loaded Successfully! 🧠✨');
