@@ -5,9 +5,9 @@ A modern, responsive e-commerce website for Thinky Fun Kids - creating fun, crea
 ## 🌟 Features
 
 - **Responsive Design** - Fully optimized for desktop (1024px+), tablet (768px-1023px), and mobile (480px) devices
-- **Product Catalog** - 14 products across 3 categories with detailed descriptions
+- **Product Catalog** - 10 products across 2 categories with detailed descriptions
 - **Smart Filtering** - Filter products by category with smooth animations and auto-scroll to products
-- **Product Images** - Real product photographs for all 14 products across all categories
+- **Product Images** - Real product photographs for all products across all categories
 - **Payment Integration** - Direct integration with ToyyibPay for secure transactions
 - **Modern UI/UX** - Beautiful gradients, animations, and interactive elements
 - **Fast Performance** - Cleaned and optimized code with no unnecessary dependencies
@@ -39,11 +39,7 @@ ALISYA/
 │   ├── worksheet.jpg       # Kids Activity product
 │   ├── journal-and-flashcards.jpg # Kids Activity product
 │   ├── mega-bundle.jpg     # Kids Activity product
-│   ├── learning-bundle.jpeg # Learning Bundle product
-│   ├── myfirstbook.jpeg    # MommyHana product
-│   ├── excelhana.jpeg      # MommyHana product
-│   ├── emmuneboozter.jpeg  # MommyHana product
-│   └── susukambingcoklat.jpeg # MommyHana product
+│   └── learning-bundle.jpeg # Learning Bundle product
 └── README.md
 ```
 
@@ -55,16 +51,8 @@ ALISYA/
 - Sudoku Puzzles
 - Maze Worksheets
 
-### Learning Bundle (4 products)
-- Educational Activity Packs
-- Brain Development Books
-- Learning Games
-
-### MommyHana (4 products)
-- My First Book
-- Excel Hana
-- Immune Booster
-- Susu Kambing Coklat
+### Learning Bundle (1 product)
+- Learning Bundle - Complete educational package
 
 ## 🎨 Design & Technology
 
@@ -108,9 +96,10 @@ ALISYA/
 ## � Recent Updates (March 2026)
 
 ### Latest Improvements
-- **Product Images**: Added real product images for all 14 products across all categories (replaced vector icons)
+- **MommyHana Removed**: Removed all MommyHana products and category from shop page - now focusing on Kids Activities and Learning Bundle
+- **Product Images**: Added real product images for all products across all categories (replaced vector icons)
 - **Filter Auto-Scroll**: Clicking category filters now automatically scrolls to the product section
-- **Code Optimization**: Removed 43 lines of unnecessary code, keeping only essential functionality
+- **Code Optimization**: Removed unnecessary code, keeping only essential functionality
 - **Image Naming Fix**: Fixed image file names (removed spaces, using hyphens) for proper web server compatibility
 - **Page Initialization**: Added scroll-to-top on page refresh for better user experience
 - **Layout Refinements**: 4-column promise card layout on desktop, optimized hero section sizing
@@ -194,6 +183,7 @@ All products are integrated with **ToyyibPay** for secure payment processing. Ea
 
 ## 📈 Future Enhancements
 
+- [ ] Explore wellness/nutrition product line
 - [ ] Add product reviews and ratings
 - [ ] Implement shopping cart functionality
 - [ ] Add quantity selector for products
